@@ -29,7 +29,7 @@ import AdminUsers from "./pages/admin/AdminUsers";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/malis-hotel">
       <AuthProvider>
         <div className="min-h-screen flex flex-col">
           <Navbar />
