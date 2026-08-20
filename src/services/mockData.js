@@ -1,8 +1,9 @@
+const BASE = import.meta.env.BASE_URL;
 export const rooms = [
   {
     id: "willow-suite",
     name: "The Willow Suite",
-    image: "/rooms/willow-suite.jpg",
+    image: `${BASE}rooms/willow-suite.jpg`,
     price: 210,
     capacity: 2,
     size: "38 m²",
@@ -13,7 +14,7 @@ export const rooms = [
   {
     id: "orchard-room",
     name: "Orchard Room",
-    image: "/rooms/orchard-room.jpg",
+    image: `${BASE}rooms/orchard-room.jpg`,
     price: 165,
     capacity: 2,
     size: "28 m²",
@@ -24,7 +25,7 @@ export const rooms = [
   {
     id: "harborview-loft",
     name: "Harborview Loft",
-    image: "/rooms/harborview-loft.jpg",
+    image: `${BASE}rooms/harborview-loft.jpg`,
     price: 275,
     capacity: 3,
     size: "45 m²",
@@ -35,7 +36,7 @@ export const rooms = [
   {
     id: "cellar-twin",
     name: "Cellar Twin",
-    image: "/rooms/cellar-twin.jpg",
+    image: `${BASE}rooms/cellar-twin.jpg`,
     price: 140,
     capacity: 2,
     size: "24 m²",
