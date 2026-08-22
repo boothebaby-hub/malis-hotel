@@ -14,7 +14,8 @@ export default function MyReservations() {
     setError("");
     try {
       setReservations(await reservationsApi.listForUser(user.uid));
-    } catch {
+    } catch (err) {
+      console.error("Failed to load reservations:", err);
       setError("Couldn't load your reservations.");
     } finally {
       setLoading(false);
